@@ -1,0 +1,21 @@
+version: '3.4'
+name: "castle"
+services:
+  castle.api:
+    image: ${DOCKER_REGISTRY-}castleapi
+    container_name: Castle.Api
+    build:
+      context: .
+      dockerfile: Castle.Api/Dockerfile
+
+  castle.db:
+    image: postgres:latest
+    container_name: Castle.Database
+    environment:
+      - POSTGRES_DB=castle-db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./.containers/database:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
