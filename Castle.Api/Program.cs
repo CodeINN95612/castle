@@ -1,5 +1,6 @@
 using Serilog;
 using Castle.Infrastructure.Extensions;
+using Castle.Api.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -10,6 +11,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Host.UseSerilog((_, config) => config.ReadFrom.Configuration(configuration));
 
+builder.Services.AddSettings(configuration);
 builder.Services.AddInfrastructure(configuration);
 
 var app = builder.Build();
