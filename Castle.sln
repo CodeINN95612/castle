@@ -24,7 +24,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Application", "Castl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{5D34E22F-2B63-4082-BF78-4C92EE125A5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.Utils.ErrorHandling", "..\Castle.Utils.ErrorHandling\Castle.Utils.ErrorHandling.csproj", "{826BF4DB-39E8-4038-A8E2-914B7F1CE2D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Utils.ErrorHandling", "..\Castle.Utils.ErrorHandling\Castle.Utils.ErrorHandling.csproj", "{826BF4DB-39E8-4038-A8E2-914B7F1CE2D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

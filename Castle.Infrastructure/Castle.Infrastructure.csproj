@@ -16,4 +16,8 @@
     <ProjectReference Include="..\Castle.Application\Castle.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\Diagrams\" />
+  </ItemGroup>
+
 </Project>
