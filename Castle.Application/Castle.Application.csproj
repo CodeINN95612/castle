@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Castle.Utils.ErrorHandling\Castle.Utils.ErrorHandling.csproj" />
-    <ProjectReference Include="..\..\Castle.Utils.Settings\Castle.Utils.Settings.csproj" />
     <ProjectReference Include="..\Castle.Domain\Castle.Domain.csproj" />
+    <ProjectReference Include="..\Castle.Utils.ErrorHandling\Castle.Utils.ErrorHandling.csproj" />
+    <ProjectReference Include="..\Castle.Utils.Settings\Castle.Utils.Settings.csproj" />
   </ItemGroup>
 
   <ItemGroup>
