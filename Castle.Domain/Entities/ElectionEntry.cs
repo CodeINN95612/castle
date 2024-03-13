@@ -13,6 +13,9 @@ public class ElectionEntry : BaseEntity<ElectionEntryId>
 
     public required Election Election { get; set; }
     public required Candidate Candidate { get; set; }
+    public required Party Party { get; set; }
+    public required Role Role { get; set; }
+    public required Location Location { get; set; }
     public required ICollection<RoundResult> RoundResults { get; set; }
     public required ICollection<Vote> Votes { get; set; }
 }

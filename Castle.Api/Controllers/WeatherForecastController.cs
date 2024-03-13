@@ -1,4 +1,3 @@
-using Castle.Domain.Entities.Parties;
 using Castle.Infrastructure.Data;
 
 using Microsoft.AspNetCore.Mvc;
@@ -22,25 +21,5 @@ public class WeatherForecastController : ControllerBase
     {
         _logger = logger;
         _context = context;
-    }
-
-    [HttpGet(Name = "GetWeatherForecast")]
-    public IEnumerable<WeatherForecast> Get()
-    {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        {
-            Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            TemperatureC = _context.Set<Party>().Count(),
-            Summary = Summaries[0]
-        })
-        .ToArray();
-    }
-
-    [HttpPost("{name}")]
-    public IActionResult InsertNew(string name)
-    {
-        _context.Parties.Add(Party.Create(new PartyId(Guid.NewGuid()), name));
-        _context.SaveChanges();
-        return Ok();
     }
 }

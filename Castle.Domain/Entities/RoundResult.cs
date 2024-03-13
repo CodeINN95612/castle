@@ -8,6 +8,7 @@ public class RoundResult : BaseEntity<RoundResultId>
     public required ElectionEntryId IdElectionEntry { get; set; }
     public required int Votes { get; set; }
 
+    public required Election? WonElection {get;set;}
     public required Round Round { get; set; }
     public required ElectionEntry ElectionEntry { get; set; }
 }
