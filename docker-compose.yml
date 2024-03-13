@@ -1,4 +1,4 @@
-version: '3.4'
+version: "3.4"
 name: "castle"
 services:
   castle.api:
@@ -6,7 +6,7 @@ services:
     container_name: Castle.Api
     build:
       context: .
-      dockerfile: Castle.Api/Dockerfile
+      dockerfile: src/Castle.Api/Dockerfile
 
   castle.db:
     image: postgres:latest

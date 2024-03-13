@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Api", "Castle.Api\Castle.Api.csproj", "{3DDC800E-EEAF-4ADA-A3CB-B9E25828D22E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Api", "src\Castle.Api\Castle.Api.csproj", "{3DDC800E-EEAF-4ADA-A3CB-B9E25828D22E}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{012F8111-558A-4449-A465-7DECE1CAFF87}"
 EndProject
@@ -16,17 +16,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Infrastructure", "Castle.Infrastructure\Castle.Infrastructure.csproj", "{22B69009-133D-47F4-9754-C08BA28B463C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Infrastructure", "src\Castle.Infrastructure\Castle.Infrastructure.csproj", "{22B69009-133D-47F4-9754-C08BA28B463C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Domain", "Castle.Domain\Castle.Domain.csproj", "{33C90FE5-FF06-4B37-BF75-881637D2D177}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Domain", "src\Castle.Domain\Castle.Domain.csproj", "{33C90FE5-FF06-4B37-BF75-881637D2D177}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Application", "Castle.Application\Castle.Application.csproj", "{6654D273-3892-4933-BAEF-926D680C5FB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Application", "src\Castle.Application\Castle.Application.csproj", "{6654D273-3892-4933-BAEF-926D680C5FB9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{5D34E22F-2B63-4082-BF78-4C92EE125A5D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Utils.ErrorHandling", "Castle.Utils.ErrorHandling\Castle.Utils.ErrorHandling.csproj", "{E90A8A6E-7838-4D6A-A3A2-19017ADB38AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Utils.ErrorHandling", "src\Utils\Castle.Utils.ErrorHandling\Castle.Utils.ErrorHandling.csproj", "{E90A8A6E-7838-4D6A-A3A2-19017ADB38AD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Utils.Settings", "Castle.Utils.Settings\Castle.Utils.Settings.csproj", "{7549CC5C-F480-4C36-9683-EA8A948EB75A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Utils.Settings", "src\Utils\Castle.Utils.Settings\Castle.Utils.Settings.csproj", "{7549CC5C-F480-4C36-9683-EA8A948EB75A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
