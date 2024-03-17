@@ -1,4 +1,4 @@
-using Castle.Infrastructure.Data;
+using Castle.Data;
 
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,18 +8,8 @@ namespace Castle.Api.Controllers;
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
+
+    public WeatherForecastController()
     {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
-    private readonly ILogger<WeatherForecastController> _logger;
-
-    private readonly CastleDbContext _context;
-
-    public WeatherForecastController(ILogger<WeatherForecastController> logger, CastleDbContext context)
-    {
-        _logger = logger;
-        _context = context;
     }
 }

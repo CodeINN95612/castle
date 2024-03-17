@@ -7,18 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.OpenApi" Version="1.6.14" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
     <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Castle.Application\Castle.Application.csproj" />
-    <ProjectReference Include="..\Castle.Infrastructure\Castle.Infrastructure.csproj" />
+    <ProjectReference Include="..\Castle.Data\Castle.Data.csproj" />
+    <ProjectReference Include="..\Utils\Castle.Utils.ErrorHandling\Castle.Utils.ErrorHandling.csproj" />
+    <ProjectReference Include="..\Utils\Castle.Utils.Settings\Castle.Utils.Settings.csproj" />
   </ItemGroup>
 
 </Project>
